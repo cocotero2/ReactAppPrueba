@@ -1,4 +1,5 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const NavBar = () => {
   return (
@@ -15,7 +16,9 @@ const NavBar = () => {
             <Nav.Link href="#pricing">Contacto</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Futuro Carrito de compras</Nav.Link>
+            <Button variant="secondary">
+              <ShoppingCartIcon />
+            </Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
