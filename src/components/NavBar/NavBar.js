@@ -1,5 +1,5 @@
-import { Button, Container, Nav, Navbar } from "react-bootstrap";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { Container, Nav, Navbar } from "react-bootstrap";
+import CardWidget from "../CardWidget/CardWidget";
 
 const NavBar = () => {
   return (
@@ -16,9 +16,7 @@ const NavBar = () => {
             <Nav.Link href="#pricing">Contacto</Nav.Link>
           </Nav>
           <Nav>
-            <Button variant="secondary">
-              <ShoppingCartIcon />
-            </Button>
+            <CardWidget />
           </Nav>
         </Navbar.Collapse>
       </Container>
