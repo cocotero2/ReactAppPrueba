@@ -12,7 +12,7 @@ function App() {
     
     <div className="App">
       <NavBar/>
-      <ItemListContainer title={"Bienvenidos a mi Tienda!"}/>
+      <ItemListContainer title={"Bienvenidos a mi Tienda!"} />
       <CardList/>
     </div>
   );

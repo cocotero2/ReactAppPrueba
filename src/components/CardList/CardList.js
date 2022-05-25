@@ -1,4 +1,5 @@
 import { Card, CardGroup } from "react-bootstrap";
+import ItemCount from "../ItemCount/ItemCount";
 
 const CardList = () => {
   return ( 
@@ -13,7 +14,7 @@ const CardList = () => {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
+      <ItemCount />
     </Card.Footer>
   </Card>
   <Card>
@@ -26,7 +27,7 @@ const CardList = () => {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
+      <ItemCount />
     </Card.Footer>
   </Card>
   <Card>
@@ -40,7 +41,7 @@ const CardList = () => {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
+      <ItemCount />
     </Card.Footer>
   </Card>
 </CardGroup>
