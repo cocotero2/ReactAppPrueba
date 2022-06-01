@@ -1,47 +1,46 @@
 import { Card, CardGroup } from "react-bootstrap";
 import ItemCount from "../ItemCount/ItemCount";
 
-const CardList = () => {
+const CardList = ({product}) => {
+
+  const {title, price, image, stock, description}= product
+
   return ( 
     <CardGroup>
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Img variant="top" src={image} />
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>{title}</Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
+        {description}
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <ItemCount />
+      <ItemCount initial={1} stock={stock} />
     </Card.Footer>
   </Card>
   <Card>
     <Card.Img variant="top" src="holder.js/100px160" />
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>{title}</Card.Title>
       <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
+        {description}
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <ItemCount />
+      <ItemCount initial={1} stock={stock} />
     </Card.Footer>
   </Card>
   <Card>
     <Card.Img variant="top" src="holder.js/100px160" />
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>{title}</Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
+        {description}
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <ItemCount />
+      <ItemCount initial={1} stock={stock} />
     </Card.Footer>
   </Card>
 </CardGroup>
